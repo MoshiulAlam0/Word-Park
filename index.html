@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word park</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header is start  -->
+    <header class="header-container">
+        <div class="logo-con">
+            <img src="img/icons8-book-100.png" alt="">
+            <div class="logo-text">
+                <h3>World<span> park</span></h3>
+                <p>i am your english pratnar</p>
+            </div>
+        </div>
+        <div class="nav-con">
+            <button>blog</button>
+        </div>
+    </header>
+    <!-- main section is start  -->
+    <main class="main-container">
+        <div class="w-container">
+            <textarea name="" id="input-field" placeholder="You can type any word..."></textarea>
+            <button class="translet-btn" id="transler-btn">Translet</button>
+
+            <div class="word-adio">
+                <p>Phonetic: <span id="phonetic-element"></span></p>
+               <div>
+                <label for="optional-btn" class="optional-btn"><i id="speaker" class="fa-solid fa-volume-high speaker"></i></label>
+                <select id="optional-btn" class="optional-btn">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+               </div>
+            </div>
+            <p id="more-btls-btn" class="more-details-btn">more details</p>    
+        </div>
+
+        <audio id="audio">
+        </audio>
+
+        
+    </main>
+    <!-- info container / modal  -------- -->
+    <section id="modal-container" class="info-container">
+        <div  class="word-info-container w-container">
+            <i id="x-btn" class="fa-solid fa-xmark"></i>
+            <div class="word-name">
+                <div>
+                    <h3 id="word-name">Word</h3>
+                    <p id="phonetic">Phonetic</p>
+                    <div class="sound-container">
+                        <label for="optional-btn2" class="optional-btn"><i id="info-mick" class="fa-solid fa-volume-high speaker"></i></label>
+                        <select id="optional-btn2" class="optional-btn">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                       </div>
+                </div>
+            </div>
+            <div class="noun-con">
+                <div class="noun">
+                    <b>noun</b>
+                    <div class="hrline"></div>
+                </div>
+                <div class="meaning-container">
+                    <p>Synonyms: <span id="synonyms"></span></p>
+                    <p>Definition:</p>
+                    <ul id="definition-list">
+                    <!-- ---------------  -->
+                    </ul>
+                </div>
+            </div>
+            <div class="noun-con">
+                <div class="noun">
+                    <b>Verd</b>
+                    <div class="hrline"></div>
+                </div>
+                <div class="meaning-container">
+                    <p>Synonyms: <span id="synonyms2"></span></p>
+                    <p>meaning:</p>
+                    <ul id="definition-list2">
+                         <!-- --------------- -->
+                    </ul>
+                </div>
+            </div>
+            <div class="sourc">
+                <div class="hrline end-hrline"></div>
+                <a href="#" target="_blank" id="sourceUrls-tag">For get more info</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- script is here  -->
+    <script src="js/data load and display.js"></script>
+    <script src="js/get field data.js"></script>
+    <script src="js/mick.js"></script>
+    <script src="js/set more info.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

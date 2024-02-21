@@ -1,0 +1,270 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Protest+Riot&display=swap');
+    /* font-family: "Protest Riot", sans-serif;
+    font-family: "Permanent Marker", cursive; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body{
+background-color: #333232;
+
+}
+
+/* header section  */
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* font-family: "Protest Riot", sans-serif; */
+}
+.logo-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-con img{
+    width: 70px;
+}
+.logo-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    background: -webkit-linear-gradient(#0099ff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Permanent Marker", cursive;
+}
+.logo-text h3{
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+.logo-text p{
+    background: -webkit-linear-gradient(#0099ff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2.6px;
+    font-size: 5px;
+    text-transform: lowercase;
+    margin-top: -3px;
+}
+.nav-con button{
+background-color: #0093E9;
+background-image: linear-gradient(160deg, #0763db 0%, #ab14c9 100%);
+padding: 10px 12px;
+font-size: 15px ;
+font-weight: bold;
+letter-spacing: 1px;
+border: none;
+cursor: pointer;
+text-transform: uppercase;
+color: white;
+border-radius: 3px;
+}
+.nav-con button:hover{
+transform: scale(1.01);
+}
+/* main section  */
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+.w-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #000000;
+    /* border: 1px solid rgb(255, 0, 0); */
+    border-radius: 6px;
+}
+
+.w-container textarea{
+    width: 400px;
+    height: 100px;
+    resize: none;
+    padding: 11px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #333232;
+    border: none;
+   
+    color: white;
+}
+.w-container textarea::placeholder{
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    opacity: .4;
+    letter-spacing: 3px;
+}
+.w-container textarea:focus{
+    outline: none;
+}
+.translet-btn{
+    padding: 6px 10px;
+    margin-top: 10px;
+    align-self: flex-end;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #0093E9;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s;
+}
+.translet-btn:hover{
+    background-color: #0789d4;
+}
+
+.word-adio{
+margin: 20px 0 12px 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.word-adio p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+#phonetic-element {
+    color: burlywood;
+}
+.word-adio p i{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+
+}
+.word-adio p i:hover{
+    color: #d3d5da;
+}
+
+.more-details-btn{
+    align-self: self-start;
+    text-decoration: underline;
+    color: #9ec1f7;
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+.more-details-btn:hover{
+color: #ffffff;
+}
+/* <!-- info container -------- --> */
+.info-container{
+width: 100%;
+display: none;
+position: absolute;
+top: 90px;
+align-items: center;
+justify-content: center;
+}
+.word-info-container{
+width: 60%;
+color: white;
+background-color: #000000ad;
+position: relative;
+}
+#x-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size:33px;
+    color: red;
+    cursor: pointer;
+    transition: .3s;
+}
+#x-btn:hover{
+    color: rgb(207, 25, 25);
+    transform: scale(1.01);
+}
+.word-info-container p{
+   margin-top: 4px;
+   font-size: 18px;
+   width: 500px;
+}
+
+.word-name{
+    align-self: flex-start;
+    
+    margin-bottom: 15px;
+}
+.speaker{
+    color: #ffffff;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 20px;
+}
+.sound-container{
+ position: absolute;
+ right: 40px;
+}
+.speaker:hover{
+    color: #d6d3d3;
+}
+.optional-btn{
+    padding: 4px 2px;
+    font-weight: bold;
+    color: #0ad1c7;
+    background-color: transparent;
+}
+.optional-btn:focus{
+    outline:none;
+    border:1px solid #0093E9;
+}
+.word-name h3{
+    align-self: flex-start;
+    letter-spacing: 1px;
+    font-size: 27px;
+}
+
+.noun-con{
+    margin-top: 40px;
+    width: 100%;
+    margin: 10px;
+}
+.noun{
+ margin: 10px 0;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+
+}
+.hrline{
+    width: 90%;
+    height: 1px;
+    background-color: #0c71af;
+}
+.end-hrline{
+    width: 100%;
+    margin: 10px 0;
+}
+.meaning-container ul{
+    margin-left: 40px;
+}
+#synonyms , #synonyms2{
+    color: #ecc43f;
+}
+.sourc{
+    align-self: flex-start;
+}
+.sourc a{
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
